@@ -13,8 +13,6 @@ interface User {
   html_url: string,
   avatar_url: string,
   login: string,
-  followers: number,
-  following: number,  
   deleted: boolean
 }
 
@@ -34,8 +32,6 @@ function Main() {
             html_url: ele.html_url,
             avatar_url: ele.avatar_url,
             login: ele.login,
-            followers: ele.followers,
-            following: ele.following,
             deleted: false            
           }))
         localStorage.setItem('users', JSON.stringify(newList));
